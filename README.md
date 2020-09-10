@@ -1,4 +1,4 @@
-# QSA Application  [![Website](https://img.shields.io/website-up-down-green-red/http/qsa.inf.unideb.hu.svg)](http://qsa.inf.unideb.hu/actuator/health)
+# QSA Application  [![Website](https://img.shields.io/website-up-down-green-red/http/qsa.inf.unideb.hu.svg)](https://qsa.inf.unideb.hu/lab/api/calculator/actuator/health)
 QSA Application is a tool to visualize and calculate different queue properties. Main features:
 - Calculate queue details
 - Visualize queue properties
@@ -7,22 +7,37 @@ For those who want to help develop the application:
 - [Git workflow](docs/git-workflow.md)
 - [Useful links](docs/useful-links.md)
 
-## Services
+## Repositories
 
-### qsa-application-config [![CLICK](https://img.shields.io/badge/-Click-blue)](https://github.com/Queueing-Systems-Assistance/qsa-application-config)
-- system, it's properties and values configuration files
-- tests for the configuration files
+### qsa-calculator
+- backend system feature calculator service
 
-### qsa-application-backend [![CLICK](https://img.shields.io/badge/-Click-blue)](https://github.com/Queueing-Systems-Assistance/qsa-application-backend)
-- contains all domain objects (POJOs)
-- validates the domain objects
-- here you can find the implementation of the math
-- resolves systems and values, exception messages
-- determines where is the request origin country
+### qsa-formula-handler
+- backend system feature visualiser
 
-### qsa-application-frontend [![CLICK](https://img.shields.io/badge/-Click-blue)](https://github.com/Queueing-Systems-Assistance/qsa-application-frontend)
-- user friendly website written in angular
+### qsa-config-domain
+- domain classes for configs
+
+### qsa-config-assembler
+- assembles configs
+
+### qsa-config-resolver
+- resolves configs
+
+### qsa-config-validator
+- validates a config pack
+
+### qsa-system-config-pack
+- config pack for systems
+
+### qsa-feature-config-pack
+- config pack for features
+
+### qsa-application-frontend
+- frontend part of the qsa
+- DEPRECATED
 
 ## Contributors
-- Szilágyi Zoltán
-- Szászi Szabolcs
+- Zoltan Szilagyi
+- Szabolcs Szaszi
+- Kolcsei Csanad
